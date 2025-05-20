@@ -1,0 +1,23 @@
+Image Gallery Feature Checklist
+
+[1] Responsive Layout
+[1] Image Thumbnails
+[1] Lightbox Effect
+[ ] Basic Navigation (Previous/Next buttons)
+[ ] Close Button/Escape Key
+[ ] Keyboard Navigation
+[ ] Lazy Loading
+[ ] Thumbnail Highlighting
+[ ] Fullscreen Mode
+[ ] Slideshow / Autoplay
+[ ] Image Zoom or Pan
+[ ] Upload Feature (if dynamic gallery)
+[ ] Download Button
+[ ] Image Carousel / Slider
+[ ] Share Buttons (Social Media)
+[ ] Animation Effects (fade, slide, zoom)
+[ ] Image Counter (e.g., 'Image 3 of 10')
+[1] Dark/Light Theme Toggle
+[ ] Mobile Gesture Support (Swipe Navigation)
+[ ] Infinite Scroll (Load more on scroll)
+[ ] Preloading Next Image (for smooth transitions)

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class=" bg-light-bg dark:bg-dark-bg flex flex-row transition-colors duration-500 ease-in-out "
+  >
+
+    <div id="lightBox" class="hidden z-30 flex justify-center items-center min-w-[100%]  min-h-screen fixed left-0 top-0 bg-light-card dark:bg-dark-card bg-opacity-60 backdrop-blur-md dark:bg-opacity-60 dark:backdrop-blur-md">
+      <div class="flex flex-row fixed top-2 left-16 z-31" 
+      id="options">
+      <img id="rotate" src="../icons/rotate-light.png" class="max-h-6 m-2 cursor-pointer" alt="rotate 90deg">
+      <img id="bin" src="../icons/bin-light.png" class="max-h-6 m-2 cursor-pointer" alt="delete">
+      <img id="share" src="../icons/share-light.png" class="max-h-6 m-2 cursor-pointer" alt="share">
+      <img
+      id="cross1"
+      class="m-2 max-h-6 cursor-pointer align-bottom"
+      src="../icons/close-light.png"
+      alt="cross icon"
+    />
+
+      </div>
+      <div id="imgHolder" class=" h-[80%] w-[80%] m-10  flex justify-center items-center">
+        <img id="preview" class="rounded-sm" src="../Images/renamed/30_large.jpg" alt="">
+      </div>
+
+      <div class="absolute flex justify-between items-center w-[80%] h-[80%] pointer-events-none">
+        <img id="prevBtn" class="max-h-6 cursor-pointer pointer-events-auto" src="../icons/prev-light.png" alt="prev icon" />
+        <img id="nextBtn" class="max-h-6 cursor-pointer pointer-events-auto" src="../icons/next-light.png" alt="next icon" />
+      </div>
+      
+    </div>
+    <div
+      id="left"
+      class="dark:bg-opacity-60 dark:backdrop-blur-md fixed z-40 top-0 left-0 h-screen bg-light-navbar justify-between items-center dark:bg-dark-navbar bg-opacity-60 backdrop-blur-md p-4 flex flex-col"
+    >
+      <div class="flex flex-col items-center space-y-4 mt-6">
+
+        
+        <!-- Home icon -->
+        <img
+          id="homeIcon"
+          class="my-2 max-h-6 cursor-pointer"
+          src="../icons/home-light-1.png"
+          alt="home icon"
+        />
+
+        <!-- Like icon -->
+        <img
+          id="lkIcon"
+          class="my-2 max-h-6 cursor-pointer"
+          src="../icons/like-light-0.png"
+          alt="like icon"
+        />
+
+        <!-- Add icon -->
+        <img
+          id="addIcon"
+          class="my-2 max-h-6 cursor-pointer"
+          src="../icons/add-light.png"
+          alt="add icon"
+        />
+
+        <!-- Slideshow icon -->
+      <img
+      id="slideshowIcon"
+      class="my-2 max-h-6 cursor-pointer"
+      src="../icons/slideshow-light.png"  
+      alt="slideshow icon"
+      />
+
+      </div>
+
+
+
+      <div class="h-[4%] w-[100%] p-1 mt-auto mb-4">
+        <button id="themeTogglebtn">
+          <span id="toggleIcon"
+            ><img class="max-h-4" src="../icons/night-icon.png" alt="moon icon"
+          /></span>
+        </button>
+      </div>
+      
+      <img
+      id="cross"
+      class="my-2 max-h-6 cursor-pointer"
+      src="../icons/close-light.png"
+      alt="cross icon"
+    />
+
+    </div>
+    <div id="menu" class=" z-40 hidden">
+      <img id="mnu" class="my-2 max-h-6 cursor-pointer fixed left-2 top-2" src="../icons/menu-light.png" alt="menu">
+    </div>
+    <div id="right" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-1 p-4">
+    </div>
+    
+   
+
+    <script src="script.js"></script>
+  </body>
+</html>
